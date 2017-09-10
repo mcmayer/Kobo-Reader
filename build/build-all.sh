@@ -29,6 +29,7 @@ for i in \
 	dosfstools \
 	wireless_tools \
 	wpa_supplicant \
+	libpng16 \
 	libpng \
 	jpegsrc \
 	busybox \
@@ -40,6 +41,7 @@ for i in \
 	lcms \
 	libmng \
 	qt \
+	tslib \
 ; do
 	if echo "${SKIP:-}" | grep -q \\\<"$i"\\\> ; then
 		echo "Building of $i suppressed by \$SKIP"

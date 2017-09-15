@@ -42,6 +42,7 @@ for i in \
 	libmng \
 	qt \
 	tslib \
+	libev \
 ; do
 	if echo "${SKIP:-}" | grep -q \\\<"$i"\\\> ; then
 		echo "Building of $i suppressed by \$SKIP"

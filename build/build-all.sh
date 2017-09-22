@@ -43,6 +43,7 @@ for i in \
 	qt \
 	tslib \
 	libev \
+	libaio \
 ; do
 	if echo "${SKIP:-}" | grep -q \\\<"$i"\\\> ; then
 		echo "Building of $i suppressed by \$SKIP"
